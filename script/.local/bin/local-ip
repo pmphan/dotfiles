@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+lip=$(awk '{print $7; exit}'< <(ip route get 1))
+[[ $lip ]] || exit 1
+echo $lip
