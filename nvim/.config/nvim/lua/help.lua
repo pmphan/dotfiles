@@ -37,14 +37,7 @@ function M.on_attach_nvim_tree(bufnr)
     -- override some default mappings
     vim.keymap.set('n', '<C-x>', '', { buffer = bufnr })
     vim.keymap.del('n', '<C-x>',     { buffer = bufnr })
-    vim.keymap.set('n', '<Tab>', '', { buffer = bufnr })
-    vim.keymap.del('n', '<Tab>',     { buffer = bufnr })
-    vim.keymap.set('n', '<CR>', '',  { buffer = bufnr })
-    vim.keymap.del('n', '<CR>',      { buffer = bufnr })
-
     vim.keymap.set('n', '<C-h>', api.node.open.horizontal, opts('Open: Horizontal Split'))
-    vim.keymap.set('n', '<Tab>', api.node.open.edit,       opts('Open'))
-    vim.keymap.set('n', '<CR>',  api.node.open.preview,    opts('Open Preview'))
 end
 
 return M

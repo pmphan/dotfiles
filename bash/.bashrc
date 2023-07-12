@@ -20,4 +20,4 @@ fi
 . /usr/share/git/completion/git-completion.bash
 
 # Customize bash prompt
-PS1='\[\e[1;31m\]\u \[\e[34m\]\w\[\e[0m\] $ '
+PS1='\[\e[1;31m\] \u\[\e[34m\] \w\[\e[32m\] $\[\e[0m\] '

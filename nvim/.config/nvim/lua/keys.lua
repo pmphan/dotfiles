@@ -7,7 +7,6 @@ local helper = require("help")
 
 -- COCS
 -- Make <CR> to accept selected completion item or notify coc.nvim to format
--- <C-g>u breaks current undo, please make your own choice.
 keyset("i", "<TAB>", [[coc#pum#visible() ? coc#pum#confirm() : "<TAB>"]], opts)
 
 -- NvimTree
