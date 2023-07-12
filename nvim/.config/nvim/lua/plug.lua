@@ -1,3 +1,4 @@
+-- TODO: Actually do lazy load
 local helper = require("help")
 
 require("lazy").setup({
@@ -47,7 +48,7 @@ require("lazy").setup({
     -- Autocomplete
     { "neoclide/coc.nvim", branch = "release", name = "coc" },
 
-   -- Fuzzy search
+    -- Fuzzy search
     {
         "junegunn/fzf", name = "fzf",
         build = function() vim.fn["fzf#install"]() end
