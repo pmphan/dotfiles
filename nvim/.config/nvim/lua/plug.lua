@@ -1,4 +1,3 @@
--- TODO: Actually do lazy load
 local helper = require("help")
 
 require("lazy").setup({
@@ -39,8 +38,17 @@ require("lazy").setup({
         }
     },
 
-    -- Feline
-    { "feline-nvim/feline.nvim", name = "feline" },
+    -- Status line
+    {
+        "nvim-lualine/lualine.nvim", name = "lualine",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        opts = {
+            options = {
+                theme = "catppuccin",
+                disabled_filetypes = { "NvimTree" }
+            },
+        }
+    },
 
     -- Git
     { "tpope/vim-fugitive", name = "fugitive" },
@@ -61,7 +69,3 @@ require("lazy").setup({
     root = vim.fn.stdpath("data") .. "/site/pack/lazy",
     lockfile = vim.fn.stdpath("data") .. "/site/pack/lazy/lazy-lock.json",
 })
-
-require("feline").setup{
-    components = require('catppuccin.groups.integrations.feline').get()
-}
