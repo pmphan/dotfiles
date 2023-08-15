@@ -60,7 +60,7 @@ require("lazy").setup({
     -- Git helper
     { "tpope/vim-fugitive", name = "fugitive" },
 
-    -- Gitsign
+    -- Gitsigns
     {
         "lewis6991/gitsigns.nvim", name = "gitsigns",
         opts = {
@@ -69,7 +69,7 @@ require("lazy").setup({
         }
     },
 
-    -- Autocomplete
+    -- Autocomplete/LSP
     { "neoclide/coc.nvim", branch = "release", name = "coc" },
 
     -- Fuzzy search
@@ -77,10 +77,7 @@ require("lazy").setup({
         "junegunn/fzf", name = "fzf",
         build = function() vim.fn["fzf#install"]() end
     },
-    {
-        "junegunn/fzf.vim", name = "fzf.vim",
-        dependencies = { "junegunn/fzf" }
-    }
+    { "ibhagwan/fzf-lua", name = "fzf-lua", dependencies = { "fzf" } }
 }, {
     root = vim.fn.stdpath("data") .. "/site/pack/lazy",
     lockfile = vim.fn.stdpath("data") .. "/site/pack/lazy/lazy-lock.json",

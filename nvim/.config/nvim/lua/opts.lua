@@ -28,3 +28,5 @@ opt.tabstop = 4                  -- num:  Number of spaces tabs count for
 opt.splitright = true            -- bool: Place new window to right of current one
 opt.splitbelow = true            -- bool: Place new window below the current one
 
+-- [[ Keymap ]]
+opt.timeoutlen = 2000            -- int:  Set key sequence wait length
