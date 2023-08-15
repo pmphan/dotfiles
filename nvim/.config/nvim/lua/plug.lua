@@ -69,6 +69,9 @@ require("lazy").setup({
         }
     },
 
+    -- FLog
+    { "rbong/vim-flog", name = "vim-flog" },
+
     -- Autocomplete/LSP
     { "neoclide/coc.nvim", branch = "release", name = "coc" },
 
