@@ -1,0 +1,6 @@
+# Ignore GTK themes file except the folder itself
+assets/.local/share/themes/*/*
+!assets/.local/share/themes/*/index.theme
+
+# Ignore wallpapers
+assets/.local/share/wallpapers/*

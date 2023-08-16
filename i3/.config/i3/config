@@ -25,7 +25,7 @@ bindsym $mod+z exec polybar-msg cmd toggle
 
 # WALLPAPER STARTUP
 # -----------------
-exec_always --no-startup-id feh --recursive --no-fehbg --randomize --bg-scale $XDG_DATA_HOME/wallpapers
+exec_always --no-startup-id feh --recursive --no-fehbg --randomize --bg-fill $XDG_DATA_HOME/wallpapers
 
 # VOLUME CONTROL BINDING
 # ----------------------
@@ -42,7 +42,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl -q s 5%-
 
 # SCREENSHOT BINDING
 # ------------------
-bindsym Print exec flameshot screen -c
+bindsym Print exec --no-startup-id flameshot screen -c
 bindsym Shift+Print exec flameshot gui
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -59,9 +59,9 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # A more modern dmenu replacement is rofi:
-bindsym $mod+o exec "rofi -show drun"
-bindsym $mod+Tab exec "rofi -show window"
-bindsym $mod+Control+Delete exec "rofi -show power -theme powermenu"
+bindsym $mod+o exec rofi -show drun
+bindsym $mod+Tab exec rofi -show window
+bindsym $mod+Control+Delete exec rofi -show power -theme powermenu
 
 # change focus
 bindsym $mod+j focus left
