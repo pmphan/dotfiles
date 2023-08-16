@@ -26,8 +26,8 @@ set $mantle    #181825
 set $crust     #11111b
 
 # Theme
-# class                 border  backgr. text      indcatr child_border
-client.focused          $mauve  $mauve  $mantle   $red    $mauve
-client.focused_inactive $crust  $crust  $overlay0 $crust  $base
-client.unfocused        $mantle $mantle $overlay0 $mantle $base
-client.urgent           $red    $red    $mantle   $mauve  $red
+# class                 border    backgr.   text      indcatr   child_border
+client.focused          $blue     $blue     $mantle   $red      $blue
+client.focused_inactive $overlay0 $overlay0 $mantle   $overlay0 $overlay0
+client.unfocused        $mantle   $mantle   $overlay0 $mantle   $base
+client.urgent           $red      $red      $mantle   $blue     $red
