@@ -25,7 +25,7 @@ window {
 }
 
 mainbox {
-    padding: 7px;
+	padding: 7px;
 	background-color: @bg-col;
 }
 
@@ -106,15 +106,15 @@ button selected {
 }
 
 message {
-    background-color: @bg-col-light;
-    margin: 2px;
-    padding: 2px;
-    border-radius: 7px;
+	background-color: @bg-col-light;
+	margin: 2px;
+	padding: 2px;
+	border-radius: 7px;
 }
 
 textbox {
-    padding: 6px;
-    margin: 20px 0px 0px 20px;
-    text-color: @theme;
-    background-color: @bg-col-light;
+	padding: 6px;
+	margin: 20px 0px 0px 20px;
+	text-color: @theme;
+	background-color: @bg-col-light;
 }

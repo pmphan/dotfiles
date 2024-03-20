@@ -1,8 +1,8 @@
 configuration {
 	modes: "power:rofi-powermenu";
 	location: 3;
-	yoffset: 24;
-	xoffset: -28;
+	yoffset: 28;
+	xoffset: -32;
 	show-icons: false;
 	disable-history: false;
 }
@@ -11,7 +11,8 @@ configuration {
 
 * {
 	width: 250;
-    height: 420;
+	height: 420;
+	theme: #f38ba8;
 }
 
 listview {
