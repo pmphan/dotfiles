@@ -7,10 +7,12 @@ vim.cmd.source "/usr/share/nvim/archlinux.vim"
 -- These keybindings need to be defined before the first /
 -- is called; otherwise, it will default to "\"
 vim.g.mapleader = ","
--- vim.g.localleader = "\\"
+vim.g.maplocalleader = " "
 
--- IMPORTS
--- require('vars')         -- Variables
-require('opts')         -- Options
-require('plug')         -- Plugins
-require('keys')         -- Keymaps
+require("lazy").setup("plugins", {
+    root = vim.fn.stdpath("data") .. "/site/pack/lazy",
+    lockfile = vim.fn.stdpath("data") .. "/site/pack/lazy/lazy-lock.json"
+})
+require("opts")
+require("keys")
+
