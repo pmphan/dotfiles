@@ -1,7 +1,7 @@
 --[[ init.lua ]]
 
 -- This line makes pacman-installed global Arch Linux vim packages work.
-vim.cmd.source "/usr/share/nvim/archlinux.vim"
+vim.cmd.source "/usr/share/nvim/archlinux.lua"
 
 -- LEADER
 -- These keybindings need to be defined before the first /
