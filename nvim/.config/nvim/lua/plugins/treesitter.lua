@@ -3,7 +3,7 @@ return {
     build = ":TSUpdate",
     opts = {
         ensure_installed = {
-            "c", "lua", "vim", "vimdoc", "query", "python", "bash", "asm", "markdown", "norg", "disassembly"
+            "c", "cpp", "lua", "ini", "vim", "vimdoc", "query", "python", "bash", "asm", "markdown", "norg", "disassembly"
         },
         highlight = { enable = true }
     },
